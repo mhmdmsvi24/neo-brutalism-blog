@@ -2,6 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "work-sans-med";
+  src: url("./assets/fonts/WorkSans-Medium.woff2") format("woff2"),
+    url("./assets/fonts/WorkSans-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "work-sans-semibold";
+  src: url("./assets/fonts/WorkSans-SemiBold.woff2") format("woff2"),
+    url("./assets/fonts/WorkSans-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "work-sans-bold";
+  src: url("./assets/fonts/WorkSans-Bold.woff2") format("woff2"),
+    url("./assets/fonts/WorkSans-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "work-sans-extrabold";
+  src: url("./assets/fonts/WorkSans-ExtraBold.woff2") format("woff2"),
+    url("./assets/fonts/WorkSans-ExtraBold.woff") format("woff");
+}
+
+html {
+  font-family: "work-sans-med";
+}
+
+body {
+  background-image: url("./assets/main-bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
 @layer utilities {
   .text-ellipsis-2 {
     display: -webkit-box;
@@ -14,6 +48,10 @@
 
   .border-brut {
     border: 2px solid black;
+  }
+
+  .border-brut-yellow {
+    border: 2px solid yellow;
   }
 
   .clear-brut {

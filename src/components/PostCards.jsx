@@ -2,8 +2,8 @@ import CardTags from "./CardTags";
 
 export default function PostCards({ title, desc, tags, imgUrl, imgAlt }) {
   return (
-    <div className="flex flex-col overflow-hidden p-1 rounded-md h-[400px] w-full max-w-[400px] shadow-brut border-brut hover:clear-brut">
-      <div className="basis-1/2 overflow-hidden flex justify-center items-center">
+    <div className="flex flex-col overflow-hidden p-1 rounded-md h-[400px] bg-white w-full max-w-[400px] shadow-brut border-brut hover:clear-brut">
+      <div className="flex items-center justify-center overflow-hidden basis-1/2">
         <img
           src={imgUrl}
           alt={imgAlt}
@@ -11,12 +11,12 @@ export default function PostCards({ title, desc, tags, imgUrl, imgAlt }) {
           className="object-cover h-[98%] w-[98%] rounded-md border-2 border-black"
         />
       </div>
-      <div className="basis-1/2 px-2 py-3 flex flex-col justify-between">
+      <div className="flex flex-col justify-between px-2 py-3 basis-1/2">
         <div>
-          <h3 className="text-blue-600 text-lg md:text-xl font-bold">
+          <h3 className="text-lg text-blue-600 md:text-xl font-work-sans-extrabold">
             {title}
           </h3>
-          <p className="text-ellipsis-2">{desc}</p>
+          <p className="text-ellipsis-2 font-work-sans-semibold">{desc}</p>
         </div>
         <div className="flex flex-wrap gap-1">
           {tags.map((tag) => (

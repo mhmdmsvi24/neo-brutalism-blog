@@ -7,6 +7,12 @@ export default {
         brut: "4px 4px 0 black",
         "brut-sm": "2px 2px 0 black",
       },
+      fontFamily: {
+        "work-sans-med": "work-sans-med",
+        "work-sans-semibold": "work-sans-semibold",
+        "work-sans-bold": "work-sans-bold",
+        "work-sans-extrabold": "work-sans-extrabold",
+      },
     },
   },
   plugins: [],

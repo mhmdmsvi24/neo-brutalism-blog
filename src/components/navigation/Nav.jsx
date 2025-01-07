@@ -4,30 +4,36 @@ export default function Nav() {
     Blog: ["/"],
     "About Me": ["/"],
     Contact: ["/"],
+    "Ask Me": ["/"],
   };
 
   let navItemsList = Object.keys(navItems);
   let navItemsLink = Object.values(navItems);
 
   return (
-    <div className="bg-white w-full min-h-[3rem] flex justify-center items-center border-b-4 border-black">
-      <div className="container">
-        {/* Left for Nav items */}
-        <div>
-          <ul className="flex gap-4 font-bold">
-            {navItemsList.map((item, ind) => (
-              <li key={item}>
-                <a
-                  href={navItemsLink[ind]}
-                  className="px-2 py-3 block text-blue-900"
-                >
-                  {item}
-                </a>
-              </li>
-            ))}
-          </ul>
+    <header className="flex items-center justify-center w-full bg-white">
+      <div className="flex flex-col w-screen h-full">
+        <div className="py-2 text-2xl font-bold text-center bg-yellow-400 font-work-sans-extrabold">
+          Neo Brutalism
         </div>
+
+        <nav className="text-lg border-t-4 border-b-4 border-black font-work-sans-extrabold">
+          <div className="container mx-auto">
+            <ul className="flex justify-center gap-4 font-bold before:content-none">
+              {navItemsList.map((item, ind) => (
+                <li key={item}>
+                  <a
+                    href={navItemsLink[ind]}
+                    className="block px-2 py-3 text-blue-900"
+                  >
+                    {item}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </nav>
       </div>
-    </div>
+    </header>
   );
 }

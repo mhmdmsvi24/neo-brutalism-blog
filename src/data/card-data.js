@@ -5,7 +5,7 @@ const CardsData = [
       "Learn the basics of building components and managing state in React.",
     dateCreated: "2025-01-01",
     tags: ["React", "JavaScript", "Front End"],
-    imageUrl: "https://via.placeholder.com/150",
+    imageUrl: "https://picsum.photos/200/300",
   },
   {
     title: "Exploring Blockchain Technology",
@@ -13,7 +13,7 @@ const CardsData = [
       "An introduction to how blockchain works and its real-world applications.",
     dateCreated: "2025-01-03",
     tags: ["Blockchain", "Cryptocurrency", "Web3"],
-    imageUrl: "https://via.placeholder.com/150",
+    imageUrl: "https://picsum.photos/200/300",
   },
   {
     title: "Mastering JavaScript",
@@ -21,7 +21,7 @@ const CardsData = [
       "Advanced tips and tricks to take your JavaScript skills to the next level.",
     dateCreated: "2024-12-28",
     tags: ["JavaScript", "Programming", "Tips"],
-    imageUrl: "https://via.placeholder.com/150",
+    imageUrl: "https://picsum.photos/200/300",
   },
   {
     title: "A Guide to Modern Front-End Development",
@@ -29,7 +29,7 @@ const CardsData = [
       "Discover the latest tools and practices in front-end development.",
     dateCreated: "2024-12-25",
     tags: ["Front End", "HTML", "CSS", "JavaScript"],
-    imageUrl: "https://via.placeholder.com/150",
+    imageUrl: "https://picsum.photos/200/300",
   },
   {
     title: "How to Build a Portfolio Website",
@@ -37,7 +37,7 @@ const CardsData = [
       "Showcase your skills and projects with a modern portfolio website.",
     dateCreated: "2025-01-05",
     tags: ["React", "CSS", "Portfolio"],
-    imageUrl: "https://via.placeholder.com/150",
+    imageUrl: "https://picsum.photos/200/300",
   },
 ];
 

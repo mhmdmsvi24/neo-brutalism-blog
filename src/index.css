@@ -11,4 +11,16 @@
     line-clamp: 2;
     -webkit-line-clamp: 2;
   }
+
+  .border-brut {
+    border: 2px solid black;
+  }
+
+  .clear-brut {
+    transform: translate(4px, 4px);
+    box-shadow: none;
+    transition-property: all;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+  }
 }

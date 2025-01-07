@@ -13,7 +13,7 @@ export default function Nav() {
   return (
     <header className="flex items-center justify-center w-full bg-white">
       <div className="flex flex-col w-screen h-full">
-        <div className="py-2 text-2xl font-bold text-center bg-yellow-400 font-work-sans-extrabold">
+        <div className="py-2 text-2xl italic font-bold text-center bg-yellow-400 font-work-sans-extrabold">
           Neo Brutalism
         </div>
 

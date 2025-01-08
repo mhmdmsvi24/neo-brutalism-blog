@@ -17,7 +17,7 @@ export default function CardTags({ tagName, variant, color }) {
         break;
     }
 
-    return `${res} rounded-lg px-2 py-1 flex justify-center items-center text-xs border border-black grow shadow-brut-sm cursor-pointer font-work-sans-bold text-black/75`;
+    return `${res} rounded-md px-2 py-1 flex justify-center items-center text-xs border border-black grow shadow-brut-sm cursor-pointer font-work-sans-bold text-black/75`;
   }
 
   return <div className={whichVariant(variant)}>{tagName}</div>;

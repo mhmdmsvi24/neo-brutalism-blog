@@ -16,7 +16,7 @@ export default function Blog() {
         {!loading && error && "Something Went wrong!"}
 
         {!loading && !error && (
-          <div className="grid grid-cols-1 gap-3 m-2 justify-items-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <div className="grid grid-cols-1 gap-3 m-3 justify-items-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {data.map(
               ({ author, download_url, hight, id, url, width }, ind) => (
                 <PostCards

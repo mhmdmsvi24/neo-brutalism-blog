@@ -1,3 +1,5 @@
+import Button from "../ui/Button";
+
 export default function Nav() {
   const navItems = {
     Home: ["/"],

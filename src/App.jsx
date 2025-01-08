@@ -1,4 +1,5 @@
 import Blog from "./components/Blog";
+import Footer from "./components/footer/Footer";
 import Nav from "./components/navigation/Nav";
 
 /*
@@ -19,6 +20,7 @@ export default function App() {
     <div className="flex flex-col text-base h-svh">
       <Nav />
       <Blog />
+      <Footer />
     </div>
   );
 }

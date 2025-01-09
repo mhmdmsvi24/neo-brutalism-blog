@@ -2,7 +2,7 @@ import CardTags from "./CardTags";
 
 export default function PostCards({ title, desc, tags, imgUrl, imgAlt }) {
   return (
-    <div className="flex flex-col overflow-hidden p-1 rounded-md h-[400px] bg-white w-full max-w-[400px] shadow-brut border-brut hover:clear-brut">
+    <div className="flex flex-col overflow-hidden p-1 rounded-md h-[400px] bg-white w-full max-w-[400px] shadow-brut border-brut hover:clear-brut cursor-pointer">
       <div className="flex items-center justify-center overflow-hidden basis-1/2">
         <img
           src={imgUrl}
@@ -20,12 +20,9 @@ export default function PostCards({ title, desc, tags, imgUrl, imgAlt }) {
         </div>
         <div className="flex flex-wrap gap-1">
           {tags.map((tag) => (
-            <CardTags
-              tagName={tag}
-              variant="outline"
-              color="blue-800"
-              key={tag}
-            />
+            <CardTags intent="outline" key={tag}>
+              {tag}
+            </CardTags>
           ))}
         </div>
       </div>

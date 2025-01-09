@@ -1,24 +1,26 @@
-export default function CardTags({ tagName, variant, color }) {
-  function whichVariant(variant) {
-    let res = null;
+import { cva } from "class-variance-authority";
+import { cx } from "../utilities/utils";
 
-    switch (variant) {
-      case "primary":
-        res = `bg-${color} border border-white text-white`;
-        break;
-      case "secondary":
-        res = `bg-${color} border border-white text-black/50`;
-        break;
-      case "outline":
-        res = `border border-${color} text-black`;
-        break;
-      case "ghost":
-        res = `text-${color} text-black`;
-        break;
+export default function CardTags({
+  children,
+  intent = "outline",
+  className = null,
+}) {
+  const styles = cva(
+    "rounded-md px-2 py-1 flex justify-center items-center text-xs border border-black grow shadow-brut-sm cursor-pointer font-work-sans-bold text-black/75",
+    {
+      variants: {
+        intent: {
+          primary: "bg-blue-800 border border-white text-white",
+          secondary: "bg-gray-400 border border-white text-black/50",
+          outline: "border border-blue-800 text-black/85",
+          ghost: "text-black",
+        },
+      },
     }
+  );
 
-    return `${res} rounded-md px-2 py-1 flex justify-center items-center text-xs border border-black grow shadow-brut-sm cursor-pointer font-work-sans-bold text-black/75`;
-  }
+  const tagClass = cx(styles({ intent }), className);
 
-  return <div className={whichVariant(variant)}>{tagName}</div>;
+  return <div className={tagClass}>{children}</div>;
 }

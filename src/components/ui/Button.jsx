@@ -6,7 +6,8 @@ export default function Button({
   children,
   intent = "primary",
   size = "md",
-  isDisabled = false,
+  isIcon = false,
+  disabled = false,
   onClick,
   className,
 }) {
@@ -17,18 +18,21 @@ export default function Button({
         intent: {
           primary:
             "bg-blue-500 text-white hover:bg-blue-600 focus:ring-blue-300",
+          icon: "",
         },
         size: {
-          sm: "px-3 py-1 text-sm",
-          md: "px-6 py-2 text-base",
-          lg: "px-8 py-3 text-lg",
+          sm: "px-3 py-1 text-sm max-w-[100px]",
+          md: "px-4 py-2 text-base max-w-[125px]",
+          lg: "px-5 py-2 text-lg max-w-[150px]",
+          full: "w-full py-2 px-3",
+          square: "p-2 aspect-square w-[60px]",
         },
         disabled: {
           false: null,
           true: "opacity-50 cursor-not-allowed",
         },
       },
-      compoundVariants: [{}],
+      compoundVariants: [],
       defaultVariants: {
         color: "primary",
         size: "md",
@@ -38,12 +42,12 @@ export default function Button({
   );
 
   const buttonClass = cx(
-    styles({ intent, size, isDisabled }),
+    styles({ intent, size, isIcon, disabled }),
     className // classes passed to className prop will be in priority
   );
 
   return (
-    <button className={buttonClass} onClick={onClick} disabled={isDisabled}>
+    <button className={buttonClass} onClick={onClick} disabled={disabled}>
       {children}
     </button>
   );

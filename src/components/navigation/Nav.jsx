@@ -1,4 +1,5 @@
 import Button from "../ui/Button";
+import { ReactLogo } from "../../utilities/Logos.jsx";
 
 export default function Nav() {
   const navItems = {
@@ -19,8 +20,8 @@ export default function Nav() {
           Neo Brutalism
         </div>
 
-        <nav className="text-lg border-t-4 border-b-4 border-black font-work-sans-extrabold">
-          <div className="container mx-auto">
+        <nav className="py-2 text-lg border-t-2 border-b-2 border-black font-work-sans-extrabold">
+          <div className="container flex justify-between mx-auto">
             <ul className="flex justify-center gap-4 font-bold before:content-none">
               {navItemsList.map((item, ind) => (
                 <li key={item}>
@@ -33,6 +34,12 @@ export default function Nav() {
                 </li>
               ))}
             </ul>
+
+            <div>
+              <Button intent="icon" size="square">
+                <ReactLogo />
+              </Button>
+            </div>
           </div>
         </nav>
       </div>

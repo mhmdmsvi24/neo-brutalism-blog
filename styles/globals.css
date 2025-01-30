@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+/* @font-face {
+  font-family: "work-sans-med";
+  src: url("./assets/fonts/WorkSans-Medium.woff2") format("woff2"),
+    url("./assets/fonts/WorkSans-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "work-sans-semibold";
+  src: url("./assets/fonts/WorkSans-SemiBold.woff2") format("woff2"),
+    url("./assets/fonts/WorkSans-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "work-sans-bold";
+  src: url("./assets/fonts/WorkSans-Bold.woff2") format("woff2"),
+    url("./assets/fonts/WorkSans-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "work-sans-extrabold";
+  src: url("./assets/fonts/WorkSans-ExtraBold.woff2") format("woff2"),
+    url("./assets/fonts/WorkSans-ExtraBold.woff") format("woff");
+} */
+
+html {
+  font-family: "work-sans-med";
+}
+
+@layer utilities {
+  .text-ellipsis-2 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+  }
+
+  .border-brut {
+    border: 2px solid black;
+  }
+
+  .border-brut-yellow {
+    border: 2px solid yellow;
+  }
+
+  .clear-brut {
+    transform: translate(4px, 4px);
+    box-shadow: none;
+
+    transition: transform 350ms ease-in-out, box-shadow 350ms ease-in-out;
+  }
+
+  .clear-brut-sm {
+    transform: translate(2px, 2px);
+    box-shadow: none;
+
+    transition: transform 150ms ease-in-out, box-shadow 150ms ease-in-out;
+  }
+}

@@ -13,9 +13,7 @@ export default function PostCards({ title, desc, tags, imgUrl, imgAlt }) {
       </div>
       <div className="flex flex-col justify-between px-2 py-3 basis-1/2">
         <div>
-          <h3 className="text-lg text-blue-600 md:text-xl font-worksans font-extrabold">
-            {title}
-          </h3>
+          <h3 className="text-lg text-blue-600 md:text-xl font-worksans font-extrabold">{title}</h3>
           <p className="text-ellipsis-2 font-worksans font-semibold">{desc}</p>
         </div>
         <div className="flex flex-wrap gap-1">

@@ -29,6 +29,25 @@
 }
 
 @layer components {
+  .hamburger-menu {
+    /* Base Styles for Mobile First */
+    @apply absolute top-0 left-0 h-full bg-white p-4 z-50 border-r-2 w-[300px] flex flex-col;
+    /* Clearing Base Styles for Large Screens */
+    @apply lg:p-0 lg:w-full lg:border-0 lg:flex-row;
+    /* Base Styles for Large Screens */
+    @apply lg:relative lg:flex lg:justify-start lg:gap-4 lg:font-bold;
+  }
+
+  .hamburger-icon {
+    @apply mr-auto lg:hidden cursor-pointer;
+  }
+
+  .hamburger-dropshadow {
+    /* Base Styles */
+    @apply absolute top-0 left-0 w-full h-full bg-gray-400/50 cursor-pointer;
+    @apply lg:hidden;
+  }
+
   .text-ellipsis-2 {
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -46,4 +65,3 @@
     border: 2px solid yellow;
   }
 }
-

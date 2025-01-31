@@ -7,7 +7,7 @@ export default function CardTags({
   className = null,
 }) {
   const styles = cva(
-    "rounded-md px-2 py-1 flex justify-center items-center text-xs border border-black grow shadow-brut-sm cursor-pointer font-work-sans-bold text-black/75",
+    "px-2 py-1 flex justify-center items-center text-xs border border-black grow shadow-brut-sm cursor-pointer font-worksans font-bold text-black/75 rounded-sm",
     {
       variants: {
         intent: {

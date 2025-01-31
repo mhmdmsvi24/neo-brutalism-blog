@@ -13,7 +13,7 @@ export default function Button({
   ...props
 }) {
   const styles = cva(
-    "inline-flex items-center justify-center font-work-sans-bold rounded-md shadow-brut-sm border-brut hover:clear-brut-sm",
+    "inline-flex items-center justify-center font-worksans font-bold rounded-md shadow-brut-sm border-brut hover:clear-brut-sm",
     {
       variants: {
         intent: {

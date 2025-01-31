@@ -1,34 +1,18 @@
 @import "tailwindcss";
 
-/* @font-face {
-  font-family: "work-sans-med";
-  src: url("./assets/fonts/WorkSans-Medium.woff2") format("woff2"),
-    url("./assets/fonts/WorkSans-Medium.woff") format("woff");
-}
-
-@font-face {
-  font-family: "work-sans-semibold";
-  src: url("./assets/fonts/WorkSans-SemiBold.woff2") format("woff2"),
-    url("./assets/fonts/WorkSans-SemiBold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "work-sans-bold";
-  src: url("./assets/fonts/WorkSans-Bold.woff2") format("woff2"),
-    url("./assets/fonts/WorkSans-Bold.woff") format("woff");
-}
-
-@font-face {
-  font-family: "work-sans-extrabold";
-  src: url("./assets/fonts/WorkSans-ExtraBold.woff2") format("woff2"),
-    url("./assets/fonts/WorkSans-ExtraBold.woff") format("woff");
-} */
-
 html {
   font-family: "work-sans-med";
 }
 
-@layer utilities {
+@utility shadow-brut {
+  box-shadow: 4px 4px 0 black;
+}
+
+@utility shadow-brut-sm {
+  box-shadow: 2px 2px 0 black;
+}
+
+@layer components {
   .text-ellipsis-2 {
     display: -webkit-box;
     -webkit-box-orient: vertical;

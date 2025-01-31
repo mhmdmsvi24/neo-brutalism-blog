@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useEffect, useState } from "react";
 
 export default function useFetch(url) {
@@ -31,10 +33,11 @@ export default function useFetch(url) {
 
     fetchCards();
 
+    
     return () => {
       isMounted = false;
     };
   }, [url]);
-
+  
   return [data, loading, error];
 }

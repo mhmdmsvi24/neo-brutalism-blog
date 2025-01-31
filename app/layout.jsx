@@ -1,5 +1,4 @@
 import "@/styles/globals.css";
-import "@/styles/fonts.css";
 
 import Footer from "@/components/footer/Footer";
 import Nav from "@/components/navigation/Nav";

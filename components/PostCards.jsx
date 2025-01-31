@@ -2,7 +2,7 @@ import CardTags from "./CardTags";
 
 export default function PostCards({ title, desc, tags, imgUrl, imgAlt }) {
   return (
-    <div className="flex flex-col overflow-hidden rounded-sm min-h-[400px] max-h-[500px] bg-white w-full max-w-[420px] shadow-brut border-brut hover:clear-brut cursor-pointer">
+    <div className="flex flex-col overflow-hidden rounded-sm min-h-[400px] max-h-[500px] bg-white w-full max-w-[420px] shadow-brut border-brut hover-clear-brut cursor-pointer">
       <div className="flex items-center justify-center overflow-hidden basis-1/2 rounded-sm">
         <img
           src={imgUrl}

@@ -14,6 +14,9 @@ export default {
       fontFamily: {
         "work-sans": ["var(--font-worksans)"],
       },
+      transitionDuration: {
+        350: "350ms",
+      },
     },
   },
   plugins: [],

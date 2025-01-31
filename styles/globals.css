@@ -1,15 +1,31 @@
 @import "tailwindcss";
 
-html {
-  font-family: "work-sans-med";
+@layer base {
+  html {
+    font-family: "work-sans-med";
+  }
 }
 
-@utility shadow-brut {
-  box-shadow: 4px 4px 0 black;
-}
+@layer utilities {
+  .shadow-brut {
+    box-shadow: 4px 4px 0 black;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
 
-@utility shadow-brut-sm {
-  box-shadow: 2px 2px 0 black;
+  .shadow-brut-sm {
+    box-shadow: 2px 2px 0 black;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .hover-clear-brut:hover {
+    transform: translate(4px, 4px);
+    box-shadow: none;
+  }
+
+  .hover-clear-brut-sm:hover {
+    transform: translate(2px, 2px);
+    box-shadow: none;
+  }
 }
 
 @layer components {
@@ -29,18 +45,5 @@ html {
   .border-brut-yellow {
     border: 2px solid yellow;
   }
-
-  .clear-brut {
-    transform: translate(4px, 4px);
-    box-shadow: none;
-
-    transition: transform 350ms ease-in-out, box-shadow 350ms ease-in-out;
-  }
-
-  .clear-brut-sm {
-    transform: translate(2px, 2px);
-    box-shadow: none;
-
-    transition: transform 150ms ease-in-out, box-shadow 150ms ease-in-out;
-  }
 }
+
